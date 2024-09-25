@@ -1,0 +1,112 @@
+.home .banner-section {
+  position: relative;
+  height: 400px;
+}
+.home .banner-background {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-image: url("/public/assets/img/photos/food-banner.jpg");
+  background-size: cover;
+}
+.home .banner-background::after {
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: white;
+  opacity: 0.6;
+}
+.home .banner-img {
+  overflow: hidden;
+  height: 400px;
+}
+.home .banner-img img {
+  height: 400px;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  animation: spin 60s linear infinite;
+}
+.home .menu-section {
+  margin-top: 10px;
+}
+.home .menu-title {
+  margin-bottom: 10px;
+}
+.home .menu-content .card-section {
+  background-color: rgba(243, 243, 243, 0.411);
+  border: dashed black 1px;
+  padding: 10px;
+  height: fit-content;
+  border-radius: 8px;
+  transition: 0.3s all;
+}
+.home .menu-content .card-section:hover {
+  border: 1px dashed rgb(248, 113, 113);
+  transition: 0.3s all;
+}
+.home .menu-content .dish-card {
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px dashed rgb(254, 202, 202);
+  padding-bottom: 8px;
+  transition: 0.3s all;
+}
+.home .menu-content .dish-card:hover {
+  border-bottom: 1px dashed rgb(248, 113, 113);
+  transition: 0.3s all;
+}
+.home .menu-content .dish-card:last-child {
+  border: none;
+}
+.home .menu-content .dish-img {
+  width: 100px;
+  height: 100px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.home .menu-content .dish-body {
+  flex: 1;
+}
+.home .menu-content .dish-name {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+.home .menu-content .dish-ingredient {
+  font-size: 13px;
+}
+.home .menu-content .dish-variant {
+  display: flex;
+  gap: 5px;
+  overflow: auto;
+  width: 100%;
+}
+.home .menu-content .dish-variant-item {
+  border: dashed 1px black;
+  border-radius: 4px;
+  padding: 2px 5px;
+  white-space: nowrap;
+}
+.home .ant-space-compact input {
+  border-color: #FF000F;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

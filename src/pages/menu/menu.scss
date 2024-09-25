@@ -1,0 +1,15 @@
+@import '../../../public/assets/css/var';
+.menu-page{
+    .menu-navbar{
+        .ant-menu.ant-menu-root{
+            border: none;
+            flex-wrap: wrap; /* Cho phép các phần tử xuống dòng */
+            justify-content: flex-start; /* Điều chỉnh căn chỉnh */
+            .ant-menu-item{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+    }
+}

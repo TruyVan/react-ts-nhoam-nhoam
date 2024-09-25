@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-menu {
+  background-color: transparent;
+}
+.header .header-menu .header-menu-content.ant-menu {
+  background-color: transparent;
+  flex: 1;
+  height: fit-content;
+  border: none;
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item:hover::after {
+  opacity: 1;
+  width: 100%;
+  transition: all 0.3s;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item.ant-menu-submenu-selected {
+  color: #FF000F;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item.ant-menu-submenu-selected .ant-menu-title-content {
+  color: #FF000F;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item.ant-menu-submenu-selected .ant-menu-item-icon {
+  color: #FF000F;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item.ant-menu-item-selected {
+  color: #FF000F;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item.ant-menu-item-selected::after {
+  opacity: 1;
+  width: 100%;
+  transition: all 0.3s;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item::after {
+  left: 0px;
+  opacity: 1;
+  width: 0px;
+  transition: all 0.3s;
+  border-color: #FF000F;
+}
+.header .header-menu .header-menu-content.ant-menu .header-menu-item .ant-menu-title-content {
+  line-height: 30px;
+  font-weight: bold;
+}
+.header-menu--mobile.ant-dropdown .ant-dropdown-menu-item:last-child {
+  padding: 5px 5px;
+}
+.header-menu--mobile.ant-dropdown .ant-dropdown-menu-item:last-child button {
+  width: 100%;
+}
+.header-menu--mobile.ant-dropdown .ant-dropdown-menu-item:not(:last-child) {
+  padding: 5px 20px;
+}
+.header-menu--mobile.ant-dropdown .ant-dropdown-menu-item:not(:last-child):hover {
+  background-color: #FF000F;
+}
+.header-menu--mobile.ant-dropdown .ant-dropdown-menu-item:not(:last-child):hover a {
+  color: white;
+}
+.header-menu--mobile.ant-dropdown .ant-dropdown-menu-item:not(:last-child):hover span.anticon {
+  color: white;
+}
+.header-menu--mobile.ant-dropdown .ant-dropdown-menu-item:not(:last-child) .ant-dropdown-menu-title-content a {
+  line-height: 30px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=header.css.map */

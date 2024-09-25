@@ -1,0 +1,30 @@
+.login-page {
+  height: calc(100vh - 64px);
+  position: relative;
+}
+.login-page .background {
+  background-image: url("/public/assets/img/photos/login-background.jpg");
+  background-position: center;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  opacity: 0.3;
+}
+.login-page .ant-form .ant-form-item {
+  margin-bottom: 10px;
+}
+.login-page .ant-form .ant-form-item .ant-form-item-explain-error {
+  color: white;
+}
+.login-page .login-form .ant-form-item .ant-form-item-row .ant-form-item-control .ant-form-item-control-input .ant-form-item-control-input-content .ant-input-affix-wrapper {
+  border: none;
+  padding: 10px 20px;
+}
+.login-page .login-form .ant-form-item .ant-input:focus,
+.login-page .login-form .ant-form-item .login-form .ant-input-password:focus {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=login.css.map */

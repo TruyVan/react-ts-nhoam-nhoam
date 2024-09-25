@@ -1,0 +1,88 @@
+@import '../../../../public/assets/css/_var.scss';
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-logo{}
+    .header-menu{
+        background-color: transparent;
+        .header-menu-content.ant-menu{
+            background-color: transparent;
+            flex: 1;
+            height: fit-content;
+            border: none;
+            display: flex;
+            justify-content: center;
+            line-height: 25px;
+            .header-menu-item{
+                &:hover{
+                    &::after{
+                        opacity: 1;
+                        width: 100%;
+                        transition: all 0.3s;
+                    }
+                }
+                &.ant-menu-submenu-selected{
+                    color: $danger;
+                    .ant-menu-title-content{
+                        color: $danger;
+                    }
+                    .ant-menu-item-icon{
+                        color: $danger;
+                    }
+                }
+                &.ant-menu-item-selected{
+                    color: $danger;
+                    &::after{
+                        opacity: 1;
+                        width: 100%;
+                        transition: all 0.3s;
+                    }
+                }
+                &::after{
+                    left: 0px;
+                    opacity: 1;
+                    width: 0px;
+                    transition: all 0.3s;
+                    border-color: $danger;
+                }
+                .ant-menu-title-content{
+                    line-height: 30px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    &-menu--mobile.ant-dropdown{
+        .ant-dropdown{
+            &-menu{
+                &-item{
+                    &:last-child{
+                        padding: 5px 5px;
+                        button{
+                            width: 100%;
+                        }
+                    }
+                    &:not(:last-child){
+                        padding: 5px 20px;
+                        &:hover{
+                            background-color: $danger;
+                            a{
+                                color: white;
+                            }
+                            span.anticon{
+                                color: white;
+                            }
+                        }
+                        .ant-dropdown-menu-title-content{
+                            a{
+                                line-height: 30px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
